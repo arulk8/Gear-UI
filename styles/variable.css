@@ -6,6 +6,16 @@
   --gray: #e9e1e1;
   --aux: #ffc745;
 
+  --success: #11ad40;
+  --danger: #e41d0f;
+  --warning: #f2b959;
+  --info: #445791;
+
+  --o-success: #c0f5d0;
+  --o-danger: #f1bab6;
+  --o-warning: #f7f08c;
+  --o-info: #b4bfdd;
+
   --font-light: 400;
   --text-xs: 0.725rem;
 
