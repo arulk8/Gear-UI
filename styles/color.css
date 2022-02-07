@@ -1,0 +1,15 @@
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.b-primary {
+  border: 1px solid var(--primary);
+}
+
+.b-secondary {
+  border: 1px solid var(--secondary);
+}

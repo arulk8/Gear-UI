@@ -1,0 +1,34 @@
+:root {
+  --primary: #1e3a8a;
+  --secondary: #4b61a1;
+  --white: #ffffff;
+  --o-white: #f0eeee;
+  --gray: #e9e1e1;
+  --aux: #ffc745;
+
+  --font-light: 400;
+  --text-xs: 0.725rem;
+
+  --font-normal: 500;
+  --text-sm: 0.8rem;
+
+  --font-medium: 600;
+  --text-md: 1rem;
+
+  --font-semibold: 700;
+  --text-lg: 1.25rem;
+
+  --font-bold: 900;
+  --text-xl: 1.5rem;
+
+  --gap-1: 0.1rem;
+  --gap-2: 0.2rem;
+  --gap-3: 0.3rem;
+  --gap-4: 0.4rem;
+  --gap-5: 0.5rem;
+  --gap-6: 0.6rem;
+  --gap-7: 0.7rem;
+  --gap-8: 0.8rem;
+  --gap-9: 0.9rem;
+  --gap-10: 1rem;
+}

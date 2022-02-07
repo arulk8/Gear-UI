@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gear UI</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="./avatar.css" />
+  </head>
+  <body class="container">
+    <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
+      <div class="logo-container flex-row flex-aic mx-5">
+        <div class="logo mx-5"></div>
+        <h2 class="logo__name font-bold">
+          <a class="no-underline" href="">Gear</a>
+        </h2>
+      </div>
+
+      <div class="nav-continer margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="./index.html">Get started </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="../../document.html"> Docs </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="#"> Code </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars">
+        </div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
+    </header>
+
+    <aside class="left-aside box-shadow">
+      <div class="m-8">
+        <h2 class="font-semibold my-5 text-center">Components</h2>
+        <nav class="side-nav">
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="#"
+                >Avatar</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <aside class="right-aside box-shadow">
+        <ol class="list-style-circle">
+            <li class="right-nav__item py-3">
+                <a class="no-underline left-nav__item font-medium" href="#normal">Normal Avatar</a>
+            </li>
+            <li class="right-nav__item py-3">
+                <a class="no-underline left-nav__item font-medium" href="#standard">Standard Avatar</a>
+            </li>
+            <li class="right-nav__item py-3">
+                <a class="no-underline left-nav__item font-medium" href="#text">Text Avatar</a>
+            </li>
+        </ol>
+    </aside>
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Avatar</h2>
+        <p class="font-normal py-8">
+          Avatar is an icon or image representing a particular user used as
+          placeholder for identifying user.
+        </p>
+      </section>
+      <section id="normal" class="vgutter-md">
+        <h2 class="font-bold">Normal Avatar</h2>
+        <p class="font-normal py-8"></p>
+
+        <div class="avatar__container flex-row flex-aic flex-sa py-5">
+          <img
+            class="avatar__cr"
+            src="https://i.pravatar.cc/200?img=8"
+            alt="avatar"
+          />
+          <img
+            class="avatar__cr"
+            src="https://i.pravatar.cc/200?img=15"
+            alt="avatar"
+          />
+          <img
+            class="avatar__square"
+            src="https://i.pravatar.cc/200?img=20"
+            alt="avatar"
+          />
+          <img
+            class="avatar__square"
+            src="https://i.pravatar.cc/200?img=21"
+            alt="avatar"
+          />
+        </div>
+        <div>
+            <pre>
+                <code class="html">&lt;img class=&quot;avatar__square&quot; src=&quot;https://i.pravatar.cc/200?img=20&quot; alt=&quot;avatar&quot; /&gt;&#013&lt;img class=&quot;avatar__square&quot; src=&quot;https://i.pravatar.cc/200?img=21&quot; alt=&quot;avatar&quot; /&gt;</code>
+            </pre>
+        </div>
+      </section>
+       
+      <section id="standard" class="vgutter-md">
+        <h2 class="font-bold">Standard Avatar</h2>
+        <p class="font-normal py-8">
+          The Avatar has 4 sizes namley Extra small, small Large, Medium and
+          large
+        </p>
+
+        <div class="avatar__container flex-row flex-aic flex-sa py-5">
+          <img
+            class="avatar__cr avatar__img--xs"
+            src="https://i.pravatar.cc/200?img=8"
+            alt="avatar"
+          />
+          <img
+            class="avatar__cr avatar__img--sm"
+            src="https://i.pravatar.cc/200?img=15"
+            alt="avatar"
+          />
+          <img
+            class="avatar__cr avatar__img--md"
+            src="https://i.pravatar.cc/200?img=20"
+            alt="avatar"
+          />
+          <img
+            class="avatar__cr avatar__img--lg"
+            src="https://i.pravatar.cc/200?img=21"
+            alt="avatar"
+          />
+        </div>
+        <div>
+        <pre>
+            <code class="html">&lt;img class=&quot;avatar__cr avatar__img--md&quot; src=&quot;https://i.pravatar.cc/200?img=20&quot; alt=&quot;avatar&quot; /&gt;&#013;&lt;img class=&quot;avatar__cr avatar__img--lg&quot; src=&quot;https://i.pravatar.cc/200?img=21&quot; alt=&quot;avatar&quot; /&gt;
+            </code>
+        </pre>
+        </div>
+      </section>
+      
+      <section id="text" class="vgutter-md">
+        <h2 class="font-bold">Text Avatar</h2>
+        <p class="font-normal py-8">
+          Instead of image we can use text for placeholder. The text can be
+          initials
+        </p>
+
+        <div class="avatar__container flex-row flex-aic flex-sa py-5">
+          <div class="avatar-text">AK</div>
+          <div class="avatar-text">A</div>
+          <div class="avatar-text">AMK</div>
+        </div>
+        <div>
+            <pre>
+                <code class="html">&lt;div class=&quot;avatar-text&quot;&gt;A&lt;/div&gt;&amp;&#013;&lt;div class=&quot;avatar-text&quot;&gt;AMK&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+        
+      </section>
+      
+    </main>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>

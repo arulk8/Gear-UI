@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("./styles/normalize.css");
+@import url("./styles/variable.css");
+@import url("./styles/layout.css");
+@import url("./styles/color.css");
+@import url("./styles/utility.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 87.5%;
+  height: 100%;
+  scroll-padding-top: 5rem; /* height of sticky header */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+.main-header {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+}
+.main-nav__link > a {
+  color: inherit;
+}
+
+.logo {
+  background: url("./assets/image/logo.svg");
+  width: 3rem;
+  height: 3rem;
+}
+.logo__name > a {
+  color: inherit;
+}
+.logo__name:hover,
+.main-nav__link:hover {
+  color: var(--o-white);
+  text-decoration: underline;
+}
+
+.left-aside {
+  height: 90vh;
+  overflow-y: auto;
+  background-color: var(--o-white);
+  position: fixed;
+  width: 45%;
+  display: none;
+}
+
+.side-nav__link {
+  padding: 0.6rem 2.5rem;
+  border-radius: 10px;
+  color: var(--primary);
+}
+.side-nav__link:hover {
+  color: var(--white);
+  background-color: var(--secondary);
+}
+.side-nav__item--active {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.left-nav__item {
+  color: var(--primary);
+}
+.left-aside,
+.right-aside {
+  margin-top: 4.8rem;
+}
+
+.content {
+  padding: 6rem 2rem 0rem 2rem;
+  width: 100%;
+  margin-left: 0;
+}
+
+.avatar__container {
+  width: 100%;
+}
+.right-aside {
+  display: none;
+}
+.nav-continer {
+  display: none;
+}
+.right-nav__item {
+  display: block;
+}
+
+.mobile-nav {
+  display: block;
+}
+#closeIcon {
+  display: none;
+}
+@media (min-width: 40em) {
+  html {
+    font-size: 100%;
+  }
+  .nav-continer {
+    display: block;
+  }
+  .content {
+    margin-left: 12rem;
+    width: 80%;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .left-aside {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    width: 70%;
+  }
+  .left-aside {
+    display: block;
+  }
+  .right-aside {
+    padding: 1rem;
+    width: 10rem;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    padding-top: 1rem;
+    top: 0;
+    display: block;
+  }
+}
