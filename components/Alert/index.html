@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gear UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../vendor/prism.css" />
+    <link rel="stylesheet" href="../../main.css" />
+    <script src="../../vendor/prism.js"></script>
+  </head>
+  <body class="container">
+    <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
+      <div class="logo-container flex-row flex-aic mx-5">
+        <div class="logo mx-5"></div>
+        <h2 class="logo__name font-bold">
+          <a class="no-underline" href="">Gear</a>
+        </h2>
+      </div>
+
+      <div class="nav-continer margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="./index.html">Get started </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="../../document.html"> Docs </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="#"> Code </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars"></div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
+    </header>
+
+    <aside class="left-aside box-shadow">
+      <div class="m-8">
+        <h2 class="font-semibold my-5 text-center">Components</h2>
+        <nav class="side-nav">
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Avatar/index.html"
+                >Avatar</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./components/Alert/index.html"
+                >Alert</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <aside class="right-aside box-shadow">
+      <ol class="list-style-circle">
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#solid"
+            >Solid Alert</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#outline"
+            >Outline Alert</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#hollow"
+            >Hollow Alert</a
+          >
+        </li>
+      </ol>
+    </aside>
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Alerts</h2>
+        <p class="font-normal py-8">
+          Provide contextual feedback messages for typical user actions with the
+          handful of available and flexible alert messages.
+        </p>
+      </section>
+      <section id="solid" class="vgutter-md">
+        <h2 class="font-bold">Solid Alerts</h2>
+        <p class="font-normal py-8">
+          Alerts are available in 4 solid variants -
+          <span class="txt-color">Success, Error, Info and Warning.</span>
+        </p>
+
+        <div class="alert__container flex-column flex-aic py-5">
+          <div class="alert alert__success--solid">
+            <i class="fas fa-check-circle"></i>
+            Success Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__error--solid">
+            <i class="fas fa-exclamation-triangle"></i>
+            Error Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__info--solid">
+            <i class="fas fa-info-circle"></i>
+            Info Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__warning--solid">
+            <i class="fas fa-exclamation-circle"></i>
+            Warning Alert!
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;div class=&quot;alert alert__success--solid&quot;&gt;
+            &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+            Success Alert!
+            &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;alert alert__error--solid&quot;&gt;
+            &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+            Error Alert!
+            &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;</code></pre>
+        </div>
+      </section>
+      <section id="outline" class="vgutter-md">
+        <h2 class="font-bold">Outline Alerts</h2>
+        <p class="font-normal py-8">
+          Alerts are available in 4 outline variants -
+          <span class="txt-color">Success, Error, Info and Warning.</span>
+        </p>
+
+        <div class="alert__container flex-column flex-aic py-5">
+          <div class="alert alert__success--ol">
+            <i class="fas fa-check-circle"></i>
+            Success Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__error--ol">
+            <i class="fas fa-exclamation-triangle"></i>
+            Error Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__info--ol">
+            <i class="fas fa-info-circle"></i>
+            Info Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__warning--ol">
+            <i class="fas fa-exclamation-circle"></i>
+            Warning Alert!
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="code-highlight">
+          <pre
+            class="language-html"
+          ><code class="language-html">          &lt;div class=&quot;alert alert__info--ol&quot;&gt;
+            &lt;i class=&quot;fas fa-info-circle&quot;&gt;&lt;/i&gt;
+            Info Alert!
+            &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;alert alert__warning--ol&quot;&gt;
+            &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+            Warning Alert!
+            &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;</code></pre>
+        </div>
+      </section>
+      <section id="hollow" class="vgutter-md">
+        <h2 class="font-bold">Hollow Alerts</h2>
+        <p class="font-normal py-8">
+          Hollow alerts are available in 4 variants -
+          <span class="txt-color">Success, Error, Info and Warning.</span>
+        </p>
+
+        <div class="alert__container flex-column flex-aic py-5">
+          <div class="alert alert__success--hollow">
+            <i class="fas fa-check-circle"></i>
+            Success Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__error--hollow">
+            <i class="fas fa-exclamation-triangle"></i>
+            Error Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__info--hollow">
+            <i class="fas fa-info-circle"></i>
+            Info Alert!
+            <i class="fas fa-times"></i>
+          </div>
+
+          <div class="alert alert__warning--hollow">
+            <i class="fas fa-exclamation-circle"></i>
+            Warning Alert!
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="code-highlight">
+          <pre
+            class="language-html"
+          ><code class="language-html">          &lt;div class=&quot;alert alert__error--hollow&quot;&gt;
+            &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+            Error Alert!
+            &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;alert alert__info--hollow&quot;&gt;
+            &lt;i class=&quot;fas fa-info-circle&quot;&gt;&lt;/i&gt;
+            Info Alert!
+            &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;</code></pre>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>

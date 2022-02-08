@@ -4,6 +4,8 @@
 @import url("./styles/layout.css");
 @import url("./styles/color.css");
 @import url("./styles/utility.css");
+@import url("./components/Alert/alert.css");
+@import url("./components/Avatar/avatar.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,6 +53,7 @@ body {
   position: fixed;
   width: 45%;
   display: none;
+  z-index: 50;
 }
 
 .side-nav__link {
@@ -99,6 +102,12 @@ body {
 #closeIcon {
   display: none;
 }
+
+.code-highlight {
+  width: 100%;
+  margin: auto;
+}
+
 @media (min-width: 40em) {
   html {
     font-size: 100%;
@@ -115,6 +124,10 @@ body {
   }
   .left-aside {
     width: 12rem;
+    display: block;
+  }
+  .code-highlight {
+    width: 70%;
   }
 }
 
