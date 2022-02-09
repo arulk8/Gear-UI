@@ -6,6 +6,7 @@
 @import url("./styles/utility.css");
 @import url("./components/Alert/alert.css");
 @import url("./components/Avatar/avatar.css");
+@import url("./components/Badge/badge.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -108,6 +109,9 @@ body {
   margin: auto;
 }
 
+.badge__container {
+  gap: 1rem;
+}
 @media (min-width: 40em) {
   html {
     font-size: 100%;

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gear UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../vendor/prism.css" />
+    <link rel="stylesheet" href="../../main.css" />
+    <script src="../../vendor/prism.js"></script>
+  </head>
+  <body class="container">
+    <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
+      <div class="logo-container flex-row flex-aic mx-5">
+        <div class="logo mx-5"></div>
+        <h2 class="logo__name font-bold">
+          <a class="no-underline" href="">Gear</a>
+        </h2>
+      </div>
+
+      <div class="nav-continer margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="./index.html">Get started </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="../../document.html"> Docs </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="#"> Code </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars"></div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
+    </header>
+
+    <aside class="left-aside box-shadow">
+      <div class="m-8">
+        <h2 class="font-semibold my-5 text-center">Components</h2>
+        <nav class="side-nav">
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Avatar/index.html"
+                >Avatar</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="./components/Alert/index.html"
+                >Alert</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
+                >Badges</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <aside class="right-aside box-shadow">
+      <ol class="list-style-circle">
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#icon"
+            >Badge on Icons</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#avatar"
+            >Badge on Avatars</a
+          >
+        </li>
+      </ol>
+    </aside>
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Badges</h2>
+        <p class="font-normal py-8">
+          Badges are used to show additional details to any content. They are
+          used to show the notification count.
+        </p>
+      </section>
+      <section id="icon" class="vgutter-md">
+        <h2 class="font-bold">Badge on Icons</h2>
+        <p class="font-normal py-8">
+          An icon can have badge on it. example showing count on wishlist in
+          e-commerce app
+        </p>
+
+        <div class="badge__container flex-row flex-jc-sa py-5">
+          <div class="badge">
+            <i class="fas fa-house-user"></i>
+            <span class="badge__count">3</span>
+          </div>
+          <div class="badge">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge__count">3</span>
+          </div>
+          <div class="badge">
+            <i class="fas fa-heart"></i>
+            <span class="badge__count">3</span>
+          </div>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;div class=&quot;badge&quot;&gt;
+            &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+            &lt;span class=&quot;badge__count&quot;&gt;3&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;badge&quot;&gt;
+            &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+            &lt;span class=&quot;badge__count&quot;&gt;3&lt;/span&gt;
+          &lt;/div&gt;</code></pre>
+        </div>
+      </section>
+      <section id="avatar" class="vgutter-md">
+        <h2 class="font-bold">Badge on Avatars</h2>
+        <p class="font-normal py-8">
+          An icon can have badge on it. Most commonly used to show count on
+          wishlist in e-commerce app
+        </p>
+
+        <div class="badge__container flex-row flex-aic flex-jc py-5">
+          <div class="badge">
+            <img
+              class="avatar__cr avatar__img--xs"
+              src="https://i.pravatar.cc/200?img=8"
+              alt="avatar"
+            />
+            <span class="badge__status badge__status--xs success"></span>
+          </div>
+          <div class="badge">
+            <img
+              class="avatar__cr avatar__img--sm"
+              src="https://i.pravatar.cc/200?img=8"
+              alt="avatar"
+            />
+            <span class="badge__status badge__status--sm error"></span>
+          </div>
+          <div class="badge">
+            <img
+              class="avatar__cr avatar__img--md"
+              src="https://i.pravatar.cc/200?img=8"
+              alt="avatar"
+            />
+            <span class="badge__status badge__status--md success"></span>
+          </div>
+          <div class="badge">
+            <img
+              class="avatar__cr avatar__img--lg"
+              src="https://i.pravatar.cc/200?img=8"
+              alt="avatar"
+            />
+            <span class="badge__status badge__status--lg warning"></span>
+          </div>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;div class=&quot;badge&quot;&gt;
+            &lt;img
+              class=&quot;avatar__cr avatar__img--md&quot;
+              src=&quot;https://i.pravatar.cc/200?img=8&quot;
+              alt=&quot;avatar&quot;
+            /&gt;
+            &lt;span class=&quot;badge__status badge__status--md success&quot;&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;badge&quot;&gt;
+            &lt;img
+              class=&quot;avatar__cr avatar__img--lg&quot;
+              src=&quot;https://i.pravatar.cc/200?img=8&quot;
+              alt=&quot;avatar&quot;
+            /&gt;</code></pre>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>
