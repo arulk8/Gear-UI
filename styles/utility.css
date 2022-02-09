@@ -91,10 +91,10 @@
 .flex-jc {
   justify-content: center;
 }
-.flex-sb {
+.flex-jc-sb {
   justify-content: space-between;
 }
-.flex-sa {
+.flex-jc-sa {
   justify-content: space-around;
 }
 
@@ -132,4 +132,17 @@
 }
 .vgutter-lg {
   margin-bottom: 2rem;
+}
+
+.success {
+  background-color: var(--success);
+}
+.error {
+  background-color: var(--danger);
+}
+.info {
+  background-color: var(--info);
+}
+.warning {
+  background-color: var(--warning);
 }
