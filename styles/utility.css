@@ -87,7 +87,9 @@
 .flex-aic {
   align-items: center;
 }
-
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .flex-jc {
   justify-content: center;
 }
@@ -117,6 +119,10 @@
   font-weight: var(--font-bold);
   font-size: var(--text-xl);
 }
+.font-bolder {
+  font-weight: var(--font-bolder);
+  font-size: var(--text-xxl);
+}
 .text-center {
   text-align: center;
 }
@@ -132,17 +138,4 @@
 }
 .vgutter-lg {
   margin-bottom: 2rem;
-}
-
-.success {
-  background-color: var(--success);
-}
-.error {
-  background-color: var(--danger);
-}
-.info {
-  background-color: var(--info);
-}
-.warning {
-  background-color: var(--warning);
 }
