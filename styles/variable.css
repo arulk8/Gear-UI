@@ -11,6 +11,9 @@
   --warning: #f2b959;
   --info: #445791;
 
+  --s-success: #a2d1b0;
+  --s-danger: #ed837b;
+
   --o-success: #c0f5d0;
   --o-danger: #f1bab6;
   --o-warning: #f7f08c;
@@ -31,6 +34,8 @@
   --font-bold: 900;
   --text-xl: 1.5rem;
 
+  --font-bolder: 900;
+  --text-xxl: 2rem;
   --gap-1: 0.1rem;
   --gap-2: 0.2rem;
   --gap-3: 0.3rem;

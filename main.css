@@ -7,6 +7,7 @@
 @import url("./components/Alert/alert.css");
 @import url("./components/Avatar/avatar.css");
 @import url("./components/Badge/badge.css");
+@import url("./components/Button/button.css");
 * {
   box-sizing: border-box;
   margin: 0;

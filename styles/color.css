@@ -13,3 +13,15 @@
 .b-secondary {
   border: 1px solid var(--secondary);
 }
+.success {
+  background-color: var(--success);
+}
+.error {
+  background-color: var(--danger);
+}
+.info {
+  background-color: var(--info);
+}
+.warning {
+  background-color: var(--warning);
+}
