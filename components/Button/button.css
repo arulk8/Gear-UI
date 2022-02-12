@@ -104,6 +104,18 @@
 .btn__icon--primary:hover {
   color: var(--secondary);
 }
+.btn__icon--danger {
+  color: var(--danger);
+}
+.btn__icon--danger:hover {
+  color: var(--s-danger);
+}
+.btn__icon--ecomm {
+  color: var(--danger);
+}
+.btn__icon--ecomm:hover {
+  color: var(--danger);
+}
 .btn__text-icon {
   display: flex;
   padding: 0.6rem 1rem;
