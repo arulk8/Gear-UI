@@ -9,6 +9,7 @@
 @import url("./components/Badge/badge.css");
 @import url("./components/Button/button.css");
 @import url("./components/Card/card.css");
+@import url("./components//Images/images.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -146,7 +147,7 @@ body {
   }
   .right-aside {
     padding: 1rem;
-    width: 10rem;
+    width: 12rem;
     overflow-y: auto;
     position: fixed;
     right: 0;
