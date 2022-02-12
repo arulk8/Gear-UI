@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gear UI | Button</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../vendor/prism.css" />
+    <link rel="stylesheet" href="../../main.css" />
+    <script src="../../vendor/prism.js"></script>
+  </head>
+  <body class="container">
+    <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
+      <div class="logo-container flex-row flex-aic mx-5">
+        <div class="logo mx-5"></div>
+        <h2 class="logo__name font-bold">
+          <a class="no-underline" href="">Gear</a>
+        </h2>
+      </div>
+
+      <div class="nav-continer margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="./index.html">Get started </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="../../document.html"> Docs </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="#"> Code </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars"></div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
+    </header>
+
+    <aside class="left-aside box-shadow">
+      <div class="m-8">
+        <h2 class="font-semibold my-5 text-center">Components</h2>
+        <nav class="side-nav">
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Avatar/index.html"
+                >Avatar</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Alert/index.html"
+                >Alert</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Badges/index.html"
+                >Badges</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Button/index.html"
+                >Button</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
+                >Cards</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <aside class="right-aside box-shadow">
+      <ol class="list-style-circle">
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#badge-card"
+            >Cards with badges</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a
+            class="no-underline left-nav__item font-medium"
+            href="#card-dismiss"
+            >Cards with Dismiss</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a
+            class="no-underline left-nav__item font-medium"
+            href="#card-overlay"
+            >Cards with Overlay</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#card-shadow"
+            >Cards with shadow</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a
+            class="no-underline left-nav__item font-medium"
+            href="#card-horizontal"
+            >Horizontal card</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#card-text"
+            >Text card</a
+          >
+        </li>
+      </ol>
+    </aside>
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Cards</h2>
+        <p class="font-normal py-8">
+          Cards contain content and actions about a single subject.
+        </p>
+      </section>
+
+      <section id="badge-card" class="vgutter-md">
+        <h2 class="font-bold">Cards with badges</h2>
+        <p class="font-normal py-8">Cards with badges</p>
+
+        <div class="flex-row flex-aic flex-jc flex-wrap py-5">
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column hide">
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../../assets/image/headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button primary b-primary font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;section class=&quot;card card__v&quot;&gt;
+            &lt;header class=&quot;card__header flex-column flex-aic flex-jc&quot;&gt;
+              &lt;div class=&quot;badge-icon__container flex-row flex-aic&quot;&gt;
+                &lt;span class=&quot;card__badge font-light&quot;&gt;Limited&lt;/span&gt;
+                &lt;span class=&quot;card__icons flex-column hide&quot;&gt;
+                  &lt;button class=&quot;btn__icon font-semibold btn__icon--danger&quot;&gt;
+                    &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button class=&quot;btn__icon font-semibold btn__icon--danger&quot;&gt;
+                    &lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+
+              &lt;img
+                src=&quot;../../assets/image/headphone.jpg&quot;
+                alt=&quot;white headphone&quot;
+                class=&quot;card__image&quot;
+              /&gt;
+              &lt;div class=&quot;card__overlay hide flex-row flex-aic flex-jc&quot;&gt;
+                Out of Stock
+              &lt;/div&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;card__body&quot;&gt;
+              &lt;div class=&quot;card__content&quot;&gt;
+                &lt;h2 class=&quot;font-normal&quot;&gt;Sony Bass Head phone&lt;/h2&gt;
+                &lt;h3 class=&quot;font-bold&quot;&gt;₹ 2000&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;footer class=&quot;card__footer&quot;&gt;
+                &lt;div class=&quot;card__buttons&quot;&gt;
+                  &lt;button class=&quot;card__button primary b-primary font-medium&quot;&gt;
+                    Add to Cart
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            &lt;/main&gt;
+          &lt;/section&gt;</code></pre>
+        </div>
+      </section>
+
+      <section id="card-dismiss" class="vgutter-md">
+        <h2 class="font-bold">Cards with Dismiss</h2>
+        <p class="font-normal py-8">Cards with Dismiss</p>
+
+        <div class="flex-row flex-aic flex-jc flex-wrap py-5">
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../../assets/image/headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay hide flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button primary b-primary font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;section class=&quot;card card__v&quot;&gt;
+            &lt;header class=&quot;card__header flex-column flex-aic flex-jc&quot;&gt;
+              &lt;div class=&quot;badge-icon__container flex-row flex-aic&quot;&gt;
+                &lt;span class=&quot;card__badge font-light&quot;&gt;Limited&lt;/span&gt;
+                &lt;span class=&quot;card__icons flex-column hide&quot;&gt;
+                  &lt;button class=&quot;btn__icon font-semibold btn__icon--danger&quot;&gt;
+                    &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button class=&quot;btn__icon font-semibold btn__icon--danger&quot;&gt;
+                    &lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+
+              &lt;img
+                src=&quot;../../assets/image/headphone.jpg&quot;
+                alt=&quot;white headphone&quot;
+                class=&quot;card__image&quot;
+              /&gt;
+              &lt;div class=&quot;card__overlay hide flex-row flex-aic flex-jc&quot;&gt;
+                Out of Stock
+              &lt;/div&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;card__body&quot;&gt;
+              &lt;div class=&quot;card__content&quot;&gt;
+                &lt;h2 class=&quot;font-normal&quot;&gt;Sony Bass Head phone&lt;/h2&gt;
+                &lt;h3 class=&quot;font-bold&quot;&gt;₹ 2000&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;footer class=&quot;card__footer&quot;&gt;
+                &lt;div class=&quot;card__buttons&quot;&gt;
+                  &lt;button class=&quot;card__button primary b-primary font-medium&quot;&gt;
+                    Add to Cart
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            &lt;/main&gt;
+          &lt;/section&gt;</code></pre>
+        </div>
+      </section>
+      <section id="card-overlay" class="vgutter-md">
+        <h2 class="font-bold">Cards with Overlay</h2>
+        <p class="font-normal py-8">Cards with Overlay</p>
+
+        <div class="flex-row flex-aic flex-jc flex-wrap py-5">
+          <section class="card card__v">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../../assets/image/headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button primary b-primary font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">
+            &lt;section class=&quot;card card__v&quot;&gt;
+            &lt;header class=&quot;card__header flex-column flex-aic flex-jc&quot;&gt;
+              &lt;div class=&quot;badge-icon__container flex-row flex-aic&quot;&gt;
+                &lt;span class=&quot;card__badge font-light&quot;&gt;Limited&lt;/span&gt;
+                &lt;span class=&quot;card__icons flex-column&quot;&gt;
+                  &lt;button class=&quot;btn__icon font-semibold btn__icon--danger&quot;&gt;
+                    &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button class=&quot;btn__icon font-semibold btn__icon--danger&quot;&gt;
+                    &lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+
+              &lt;img
+                src=&quot;../../assets/image/headphone.jpg&quot;
+                alt=&quot;white headphone&quot;
+                class=&quot;card__image&quot;
+              /&gt;
+              &lt;div class=&quot;card__overlay flex-row flex-aic flex-jc&quot;&gt;
+                Out of Stock
+              &lt;/div&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;card__body&quot;&gt;
+              &lt;div class=&quot;card__content&quot;&gt;
+                &lt;h2 class=&quot;font-normal&quot;&gt;Sony Bass Head phone&lt;/h2&gt;
+                &lt;h3 class=&quot;font-bold&quot;&gt;₹ 2000&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;footer class=&quot;card__footer&quot;&gt;
+                &lt;div class=&quot;card__buttons&quot;&gt;
+                  &lt;button class=&quot;card__button primary b-primary font-medium&quot;&gt;
+                    Add to Cart
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            &lt;/main&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;code-highlight&quot;&gt;
+          &lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id="card-shadow" class="vgutter-md">
+        <h2 class="font-bold">Cards with shadow</h2>
+        <p class="font-normal py-8">Cards with shadow</p>
+
+        <div class="flex-row flex-aic flex-jc flex-wrap py-5">
+          <section class="card card__v card__shadow">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+                <span class="card__icons flex-column">
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                  <button class="btn__icon font-semibold btn__icon--danger">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </span>
+              </div>
+
+              <img
+                src="../../assets/image/headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay flex-row flex-aic flex-jc">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button class="card__button primary b-primary font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">
+            &lt;section class=&quot;card card__v card__shadow&quot;&gt;
+            &lt;header class=&quot;card__header flex-column flex-aic flex-jc&quot;&gt;
+              &lt;div class=&quot;badge-icon__container flex-row flex-aic&quot;&gt;
+                &lt;span class=&quot;card__badge font-light&quot;&gt;Limited&lt;/span&gt;
+                &lt;span class=&quot;card__icons flex-column&quot;&gt;
+                  &lt;button class=&quot;btn__icon font-semibold btn__icon--danger&quot;&gt;
+                    &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button class=&quot;btn__icon font-semibold btn__icon--danger&quot;&gt;
+                    &lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+
+              &lt;img
+                src=&quot;../../assets/image/headphone.jpg&quot;
+                alt=&quot;white headphone&quot;
+                class=&quot;card__image&quot;
+              /&gt;
+              &lt;div class=&quot;card__overlay flex-row flex-aic flex-jc&quot;&gt;
+                Out of Stock
+              &lt;/div&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;card__body&quot;&gt;
+              &lt;div class=&quot;card__content&quot;&gt;
+                &lt;h2 class=&quot;font-normal&quot;&gt;Sony Bass Head phone&lt;/h2&gt;
+                &lt;h3 class=&quot;font-bold&quot;&gt;₹ 2000&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;footer class=&quot;card__footer&quot;&gt;
+                &lt;div class=&quot;card__buttons&quot;&gt;
+                  &lt;button class=&quot;card__button primary b-primary font-medium&quot;&gt;
+                    Add to Cart
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            &lt;/main&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;code-highlight&quot;&gt;
+          &lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section id="card-horizontal" class="vgutter-md">
+        <h2 class="font-bold">Horizontal card</h2>
+        <p class="font-normal py-8">Horizontal card</p>
+
+        <div class="flex-row flex-aic flex-jc flex-wrap py-5">
+          <section class="card card__h flex-row">
+            <header class="card__header flex-column flex-aic flex-jc">
+              <div class="badge-icon__container flex-row flex-aic">
+                <span class="card__badge font-light">Limited</span>
+              </div>
+
+              <img
+                src="../../assets/image/headphone.jpg"
+                alt="white headphone"
+                class="card__image"
+              />
+              <div class="card__overlay flex-row flex-aic flex-jc hide">
+                Out of Stock
+              </div>
+            </header>
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button
+                    class="card__button primary b-primary font-medium vgutter-xs"
+                  >
+                    Add to Cart
+                  </button>
+                  <button class="card__button primary b-primary font-medium">
+                    Save to Whishlist
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;section class=&quot;card card__h flex-row&quot;&gt;
+            &lt;header class=&quot;card__header flex-column flex-aic flex-jc&quot;&gt;
+              &lt;div class=&quot;badge-icon__container flex-row flex-aic&quot;&gt;
+                &lt;span class=&quot;card__badge font-light&quot;&gt;Limited&lt;/span&gt;
+              &lt;/div&gt;
+
+              &lt;img
+                src=&quot;../../assets/image/headphone.jpg&quot;
+                alt=&quot;white headphone&quot;
+                class=&quot;card__image&quot;
+              /&gt;
+              &lt;div class=&quot;card__overlay flex-row flex-aic flex-jc hide&quot;&gt;
+                Out of Stock
+              &lt;/div&gt;
+            &lt;/header&gt;
+            &lt;main class=&quot;card__body&quot;&gt;
+              &lt;div class=&quot;card__content&quot;&gt;
+                &lt;h2 class=&quot;font-normal&quot;&gt;Sony Bass Head phone&lt;/h2&gt;
+                &lt;h3 class=&quot;font-bold&quot;&gt;₹ 2000&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;footer class=&quot;card__footer&quot;&gt;
+                &lt;div class=&quot;card__buttons&quot;&gt;
+                  &lt;button
+                    class=&quot;card__button primary b-primary font-medium vgutter-xs&quot;
+                  &gt;
+                    Add to Cart
+                  &lt;/button&gt;
+                  &lt;button class=&quot;card__button primary b-primary font-medium&quot;&gt;
+                    Save to Whishlist
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            &lt;/main&gt;
+          &lt;/section&gt;</code></pre>
+        </div>
+      </section>
+      <section id="card-text" class="vgutter-md">
+        <h2 class="font-bold">Text only card</h2>
+        <p class="font-normal py-8">Text only card</p>
+
+        <div class="flex-row flex-aic flex-jc flex-wrap py-5">
+          <section class="card card__h flex-row">
+            <main class="card__body">
+              <div class="card__content">
+                <h2 class="font-normal">Sony Bass Head phone</h2>
+                <h3 class="font-bold">₹ 2000</h3>
+              </div>
+              <footer class="card__footer">
+                <div class="card__buttons">
+                  <button
+                    class="card__button primary b-primary font-medium vgutter-xs"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </footer>
+            </main>
+          </section>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">
+          &lt;section id=&quot;icon&quot; class=&quot;vgutter-md&quot;&gt;
+          &lt;h2 class=&quot;font-bold&quot;&gt;Text only card&lt;/h2&gt;
+          &lt;p class=&quot;font-normal py-8&quot;&gt;Text only card&lt;/p&gt;
+  
+          &lt;div class=&quot;flex-row flex-aic flex-jc flex-wrap py-5&quot;&gt;
+            &lt;section class=&quot;card card__h flex-row&quot;&gt;
+              &lt;main class=&quot;card__body&quot;&gt;
+                &lt;div class=&quot;card__content&quot;&gt;
+                  &lt;h2 class=&quot;font-normal&quot;&gt;Sony Bass Head phone&lt;/h2&gt;
+                  &lt;h3 class=&quot;font-bold&quot;&gt;₹ 2000&lt;/h3&gt;
+                &lt;/div&gt;
+                &lt;footer class=&quot;card__footer&quot;&gt;
+                  &lt;div class=&quot;card__buttons&quot;&gt;
+                    &lt;button
+                      class=&quot;card__button primary b-primary font-medium vgutter-xs&quot;
+                    &gt;
+                      Add to Cart
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/footer&gt;
+              &lt;/main&gt;
+            &lt;/section&gt;
+          &lt;/div&gt;
+  
+          &lt;div class=&quot;code-highlight&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+        </code></pre>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>
