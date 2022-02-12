@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gear UI | Images</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../vendor/prism.css" />
+    <link rel="stylesheet" href="../../main.css" />
+    <script src="../../vendor/prism.js"></script>
+  </head>
+  <body class="container">
+    <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
+      <div class="logo-container flex-row flex-aic mx-5">
+        <div class="logo mx-5"></div>
+        <h2 class="logo__name font-bold">
+          <a class="no-underline" href="">Gear</a>
+        </h2>
+      </div>
+
+      <div class="nav-continer margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="./index.html">Get started </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="../../document.html"> Docs </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="#"> Code </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars"></div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
+    </header>
+
+    <aside class="left-aside box-shadow">
+      <div class="m-8">
+        <h2 class="font-semibold my-5 text-center">Components</h2>
+        <nav class="side-nav">
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Avatar/index.html"
+                >Avatar</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Alert/index.html"
+                >Alert</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Badges/index.html"
+                >Badges</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Button/index.html"
+                >Button</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Card/index.html"
+                >Cards</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
+                >Images</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <aside class="right-aside box-shadow">
+      <ol class="list-style-circle">
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#image-sizes"
+            >Images with different sizes</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#image-fluid"
+            >Responsive Image</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a
+            class="no-underline left-nav__item font-medium"
+            href="#image-circle"
+            >Rounded Image</a
+          >
+        </li>
+      </ol>
+    </aside>
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Responsive Images</h2>
+        <p class="font-normal py-8">
+          Image helps to understand the website more easily. Images helps to
+          build more pleasing user experience
+        </p>
+      </section>
+
+      <section id="image-sizes" class="vgutter-md">
+        <h2 class="font-bold">Images with different sizes</h2>
+        <p class="font-normal py-8">
+          Images with different sizes are available with class
+          <span class="font-medium text-highlight"
+            >.img .img-sm, .img-md and .img-lg</span
+          >
+          for small, medium and large image
+        </p>
+
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <img
+            src="../../assets/image/plans.jpg"
+            class="img img-sm"
+            alt="image with laptop"
+          />
+          <img
+            src="../../assets/image/plans.jpg"
+            class="img img-md"
+            alt="image with laptop"
+          />
+          <img
+            src="../../assets/image/plans.jpg"
+            class="img img-lg"
+            alt="image with laptop"
+          />
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;img
+            src=&quot;../../assets/image/plans.jpg&quot;
+            class=&quot;img img-sm&quot;
+            alt=&quot;image with laptop&quot;
+          /&gt;
+          &lt;img
+            src=&quot;../../assets/image/plans.jpg&quot;
+            class=&quot;img img-md&quot;
+            alt=&quot;image with laptop&quot;
+          /&gt;</code></pre>
+        </div>
+      </section>
+      <section id="image-fluid" class="vgutter-md">
+        <h2 class="font-bold">Fluid images</h2>
+        <p class="font-normal py-8">
+          Images can be made responsive
+          <span class="font-medium text-highlight">.img-fluid</span> class
+        </p>
+
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <img
+            src="../../assets/image/plans.jpg"
+            class="img img-fluid"
+            alt="image with laptop"
+          />
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;img
+            src=&quot;../../assets/image/plans.jpg&quot;
+            class=&quot;img img-fluid&quot;
+            alt=&quot;image with laptop&quot;
+          /&gt;</code></pre>
+        </div>
+      </section>
+      <section id="image-circle" class="vgutter-md">
+        <h2 class="font-bold">Round images</h2>
+        <p class="font-normal py-8">
+          To make Image rounded add
+          <span class="font-medium text-highlight">
+            .img__round--sm, .img__round--md, .img__round--lg</span
+          >
+          <span class="font-medium text-highlight">.img-fluid</span> class
+        </p>
+
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <img
+            src="../../assets/image/plans.jpg"
+            class="img img__round--sm"
+            alt="image with laptop"
+          />
+          <img
+            src="../../assets/image/plans.jpg"
+            class="img img__round--md"
+            alt="image with laptop"
+          />
+          <img
+            src="../../assets/image/plans.jpg"
+            class="img img__round--lg"
+            alt="image with laptop"
+          />
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;img
+            src=&quot;../../assets/image/plans.jpg&quot;
+            class=&quot;img img__round--sm&quot;
+            alt=&quot;image with laptop&quot;
+          /&gt;
+          &lt;img
+            src=&quot;../../assets/image/plans.jpg&quot;
+            class=&quot;img img__round--md&quot;
+            alt=&quot;image with laptop&quot;
+          /&gt;
+          &lt;img
+            src=&quot;../../assets/image/plans.jpg&quot;
+            class=&quot;img img__round--lg&quot;
+            alt=&quot;image with laptop&quot;
+          /&gt;</code></pre>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>
