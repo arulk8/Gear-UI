@@ -6,6 +6,8 @@
   --gray: #e9e1e1;
   --aux: #ffc745;
   --tint: #f0eeeea3;
+  --black: #000000;
+  --gray: #8a8383;
 
   --success: #11ad40;
   --danger: #e41d0f;
@@ -21,7 +23,7 @@
   --o-info: #b4bfdd;
 
   --font-light: 400;
-  --text-xs: 0.725rem;
+  --text-xs: 0.75rem;
 
   --font-normal: 500;
   --text-sm: 0.8rem;
@@ -35,7 +37,6 @@
   --font-bold: 900;
   --text-xl: 1.5rem;
 
-  --font-bolder: 900;
   --text-xxl: 2rem;
   --gap-1: 0.1rem;
   --gap-2: 0.2rem;
@@ -47,4 +48,11 @@
   --gap-8: 0.8rem;
   --gap-9: 0.9rem;
   --gap-10: 1rem;
+
+  --s-40: 2.5rem;
+  --s-32: 2rem;
+  --s-28: 1.75rem;
+  --s-24: 1.5rem;
+  --s-20: 1.25rem;
+  --s-16: 1rem;
 }

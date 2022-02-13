@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gear UI | Images</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../vendor/prism.css" />
+    <link rel="stylesheet" href="../../main.css" />
+    <script src="../../vendor/prism.js"></script>
+  </head>
+  <body class="container">
+    <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
+      <div class="logo-container flex-row flex-aic mx-5">
+        <div class="logo mx-5"></div>
+        <h2 class="logo__name font-bold">
+          <a class="no-underline" href="">Gear</a>
+        </h2>
+      </div>
+
+      <div class="nav-continer margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="./index.html">Get started </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="../../document.html"> Docs </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="#"> Code </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars"></div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
+    </header>
+
+    <aside class="left-aside box-shadow">
+      <div class="m-8">
+        <h2 class="font-semibold my-5 text-center">Components</h2>
+        <nav class="side-nav">
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Avatar/index.html"
+                >Avatar</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Alert/index.html"
+                >Alert</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Badges/index.html"
+                >Badges</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Button/index.html"
+                >Button</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Card/index.html"
+                >Cards</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Images/index.html"
+                >Images</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
+                >Input</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <aside class="right-aside box-shadow">
+      <ol class="list-style-circle">
+        <li class="right-nav__item py-3">
+          <a
+            class="no-underline left-nav__item font-medium"
+            href="#default-input"
+            >Default input Form</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a
+            class="no-underline left-nav__item font-medium"
+            href="#validation-input"
+            >Input Form with validation</a
+          >
+        </li>
+      </ol>
+    </aside>
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Input</h2>
+        <p class="font-normal py-8">
+          The input HTML element is used to create interactive controls for
+          web-based forms in order to accept data from the user; a wide variety
+          of types of input data and control widgets are available, depending on
+          the device and user agent.
+        </p>
+      </section>
+
+      <section id="default-input" class="vgutter-md">
+        <h2 class="font-bold">Default input Form</h2>
+        <p class="font-normal py-8"></p>
+
+        <div class="form_container flex-aic flex-jc flex-wrap py-5">
+          <form class="form" action="">
+            <div class="form-group">
+              <label class="label font-medium" for="username">
+                Username :
+              </label>
+              <input id="username" class="input input__default" type="text" />
+            </div>
+            <div class="form-group">
+              <label class="label font-medium" for="username">
+                Password :
+              </label>
+              <input
+                id="username"
+                class="input input__default"
+                type="password"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="testArea"
+                id="testArea"
+                class="input input__default"
+                cols="10"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">           &lt;form class=&quot;form&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label class=&quot;label font-medium&quot; for=&quot;username&quot;&gt;
+                Username :
+              &lt;/label&gt;
+              &lt;input
+                id=&quot;username&quot;
+                class=&quot;input &quot;
+                type=&quot;text&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label class=&quot;label font-medium&quot; for=&quot;username&quot;&gt;
+                Password :
+              &lt;/label&gt;
+              &lt;input
+                id=&quot;username&quot;
+                class=&quot;input &quot;
+                type=&quot;password&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;textarea
+                name=&quot;testArea&quot;
+                id=&quot;testArea&quot;
+                class=&quot;input &quot;
+                cols=&quot;10&quot;
+                rows=&quot;10&quot;
+              &gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;</code></pre>
+        </div>
+      </section>
+
+      <section id="validation-input" class="vgutter-md">
+        <h2 class="font-bold">Input Form with validation</h2>
+        <p class="font-normal py-8">Input Form with validation</p>
+
+        <div class="form_container flex-aic flex-jc flex-wrap py-5">
+          <form class="form" action="">
+            <div class="form-group">
+              <label class="label font-medium" for="username">
+                Username :
+              </label>
+              <input
+                id="username"
+                class="input input-border__success"
+                type="text"
+              />
+              <span class="inline-block validation__msg input__success">
+                <i class="fas fa-check-circle"></i>
+                Username is valid
+              </span>
+            </div>
+            <div class="form-group">
+              <label class="label font-medium" for="username">
+                Password :
+              </label>
+              <input
+                id="username"
+                class="input input-border__error"
+                type="password"
+              />
+              <span class="inline-block validation__msg input__error">
+                <i class="fas fa-exclamation-triangle"></i>
+                Password is invalid
+              </span>
+            </div>
+          </form>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;form class=&quot;form&quot; action=&quot;&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label class=&quot;label font-medium&quot; for=&quot;username&quot;&gt;
+                Username :
+              &lt;/label&gt;
+              &lt;input
+                id=&quot;username&quot;
+                class=&quot;input input-border__success&quot;
+                type=&quot;text&quot;
+              /&gt;
+              &lt;span class=&quot;inline-block validation__msg input__success&quot;&gt;
+                &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+                Username is valid
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label class=&quot;label font-medium&quot; for=&quot;username&quot;&gt;
+                Password :
+              &lt;/label&gt;
+              &lt;input
+                id=&quot;username&quot;
+                class=&quot;input input-border__error&quot;
+                type=&quot;password&quot;
+              /&gt;
+              &lt;span class=&quot;inline-block validation__msg input__error&quot;&gt;
+                &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+                Password is invalid
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;</code></pre>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>
