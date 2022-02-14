@@ -8,6 +8,7 @@
   --tint: #f0eeeea3;
   --black: #000000;
   --gray: #8a8383;
+  --transparent: rgba(0, 0, 0, 0.5);
 
   --success: #11ad40;
   --danger: #e41d0f;
@@ -55,4 +56,7 @@
   --s-24: 1.5rem;
   --s-20: 1.25rem;
   --s-16: 1rem;
+
+  --z-index-nav: 50;
+  --z-index-modal: 70;
 }
