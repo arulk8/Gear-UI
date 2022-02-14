@@ -12,6 +12,8 @@
 @import url("./components//Images/images.css");
 @import url("./components/Input/input.css");
 @import url("./components/Text-utility/text.css");
+@import url("./components/list/list.css");
+@import url("./components/Modal/modal.css");
 
 * {
   box-sizing: border-box;
@@ -32,7 +34,7 @@ body {
 
 .main-header {
   position: fixed;
-  z-index: 50;
+  z-index: var(--z-index-nav);
   width: 100%;
 }
 .main-nav__link > a {
@@ -60,7 +62,7 @@ body {
   position: fixed;
   width: 45%;
   display: none;
-  z-index: 50;
+  z-index: var(--z-index-nav);
 }
 
 .side-nav__link {
@@ -124,6 +126,9 @@ body {
   margin: auto;
 }
 .text-utility__container {
+  gap: 0.5rem;
+}
+.list__container {
   gap: 0.5rem;
 }
 @media (min-width: 40em) {

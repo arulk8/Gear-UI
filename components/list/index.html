@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gear UI | Images</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../vendor/prism.css" />
+    <link rel="stylesheet" href="../../main.css" />
+    <script src="../../vendor/prism.js"></script>
+  </head>
+  <body class="container">
+    <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
+      <div class="logo-container flex-row flex-aic mx-5">
+        <div class="logo mx-5"></div>
+        <h2 class="logo__name font-bold">
+          <a class="no-underline" href="">Gear</a>
+        </h2>
+      </div>
+
+      <div class="nav-continer margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="./index.html">Get started </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="../../document.html"> Docs </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline" href="#"> Code </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars"></div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
+    </header>
+
+    <aside class="left-aside box-shadow">
+      <div class="m-8">
+        <h2 class="font-semibold my-5 text-center">Components</h2>
+        <nav class="side-nav">
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Avatar/index.html"
+                >Avatar</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Alert/index.html"
+                >Alert</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Badges/index.html"
+                >Badges</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Button/index.html"
+                >Button</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Card/index.html"
+                >Cards</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Images/index.html"
+                >Images</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Input/index.html"
+                >Input</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Text-utility/index.html"
+                >Text Utility</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
+                >List</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <aside class="right-aside box-shadow">
+      <ol class="list-style-circle">
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#heading"
+            >Headings</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#small-text"
+            >Small text</a
+          >
+        </li>
+
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#gray-text"
+            >Gray text</a
+          >
+        </li>
+        <li class="right-nav__item py-3">
+          <a class="no-underline left-nav__item font-medium" href="#center-text"
+            >Center text</a
+          >
+        </li>
+      </ol>
+    </aside>
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Test Utility</h2>
+        <p class="font-normal py-8">
+          Documentation and examples for common text utilities to control
+          alignment, wrapping, weight, and more
+        </p>
+      </section>
+
+      <section id="center-text" class="vgutter-md">
+        <h2 class="font-bold">Normal list</h2>
+        <p class="font-normal py-8">
+          For center text center-text class to the element
+        </p>
+        <div
+          class="list__container flex-column flex-aic flex-jc flex-wrap py-5"
+        >
+          <ul class="list list-style-circle">
+            <li class="list__item">item 1</li>
+            <li class="list__item">item 2</li>
+            <li class="list__item">item 3</li>
+          </ul>
+
+          <ul class="list list-style-disc">
+            <li class="list__item">item 1</li>
+            <li class="list__item">item 2</li>
+            <li class="list__item">item 3</li>
+          </ul>
+
+          <ol class="list list-style-number">
+            <li class="list__item">item 1</li>
+            <li class="list__item">item 2</li>
+            <li class="list__item">item 3</li>
+          </ol>
+
+          <ol class="list list-style-alpha-upper">
+            <li class="list__item">item 1</li>
+            <li class="list__item">item 2</li>
+            <li class="list__item">item 3</li>
+          </ol>
+          <ol class="list list-style-lower-upper">
+            <li class="list__item">item 1</li>
+            <li class="list__item">item 2</li>
+            <li class="list__item">item 3</li>
+          </ol>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;ul class=&quot;list list-style-circle&quot;&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
+          &lt;/ul&gt;
+
+          &lt;ul class=&quot;list list-style-disc&quot;&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
+          &lt;/ul&gt;
+
+          &lt;ol class=&quot;list list-style-number&quot;&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
+          &lt;/ol&gt;
+
+          &lt;ol class=&quot;list list-style-alpha-upper&quot;&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;ol class=&quot;list list-style-lower-upper&quot;&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
+          &lt;/ol&gt;</code></pre>
+        </div>
+      </section>
+
+      <section id="center-text" class="vgutter-md">
+        <h2 class="font-bold">Stacked list</h2>
+        <p class="font-normal py-8">
+          For center text center-text class to the element
+        </p>
+        <div
+          class="list__container flex-column flex-aic flex-jc flex-wrap py-5"
+        >
+          <ul class="list stacked__list">
+            <li class="list__item">List item 1</li>
+            <li class="list__item">List item 2</li>
+            <li class="list__item">List item 3</li>
+            <li class="list__item">List item 4</li>
+            <li class="list__item">List item 5</li>
+          </ul>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;ul class=&quot;list stacked__list&quot;&gt;
+            &lt;li class=&quot;list__item&quot;&gt;List item 1&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;List item 2&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;List item 3&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;List item 4&lt;/li&gt;
+            &lt;li class=&quot;list__item&quot;&gt;List item 5&lt;/li&gt;
+          &lt;/ul&gt;</code></pre>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>

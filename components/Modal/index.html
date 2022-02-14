@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gear UI</title>
-
+    <title>Gear UI | Modal</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../../vendor/prism.css" />
     <link rel="stylesheet" href="../../main.css" />
-    <link rel="stylesheet" href="./avatar.css" />
+    <script src="../../vendor/prism.js"></script>
   </head>
   <body class="container">
     <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
@@ -39,6 +40,10 @@
           </ul>
         </nav>
       </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars"></div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
     </header>
 
     <aside class="left-aside box-shadow">
@@ -51,70 +56,70 @@
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/Avatar/index.html"
+                href="../Avatar/index.html"
                 >Avatar</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/Alert/index.html"
+                href="../Alert/index.html"
                 >Alert</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/Badge/index.html"
+                href="../Badges/index.html"
                 >Badges</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/Button/index.html"
+                href="../Button/index.html"
                 >Button</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/Card/index.html"
+                href="../Card/index.html"
                 >Cards</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/Images/index.html"
+                href="../Images/index.html"
                 >Images</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/Input/index.html"
+                href="../Input/index.html"
                 >Input</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/Text-utility/index.html"
+                href="../Text-utility/index.html"
                 >Text Utility</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
-                href="./components/list/index.html"
+                href="../list/index.html"
                 >List</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
-                class="side-nav__link no-underline inline-block"
-                href="./components/Modal/index.html"
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
                 >Modal</a
               >
             </li>
@@ -122,19 +127,59 @@
         </nav>
       </div>
     </aside>
-    <aside class="right-aside box-shadow">
-      <ol class="list-style-circle">
-        <li class="right-nav__item py-3">
-          <a class="no-underline" href="#normal">Normal Avatar</a>
-        </li>
-        <li class="right-nav__item py-3">
-          <a class="no-underline" href="#standard">Standard Avatar</a>
-        </li>
-        <li class="right-nav__item py-3">
-          <a class="no-underline" href="#text">Text Avatar</a>
-        </li>
-      </ol>
-    </aside>
-    <main class="content"></main>
+
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Modal</h2>
+        <p class="font-normal py-8"></p>
+      </section>
+
+      <section id="center-text" class="vgutter-md">
+        <h2 class="font-bold">Modal</h2>
+        <p class="font-normal py-8">
+          Modal is used show important information to users.
+        </p>
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <button id="modalShow" class="btn btn__primary">Show Modal</button>
+          <div class="backdrop hide">
+            <div id="alert-modal" class="dialog dialog__sm">
+              <header class="dialog__header">
+                <h5>Dialog header</h5>
+                <button id="modalClose" class="font-medium dialog__close">
+                  <i class="fas fa-times"></i>
+                </button>
+              </header>
+              <section class="dialog__body">
+                <p class="dialog__text">Dialog Body text</p>
+              </section>
+              <footer class="dialog__footer">
+                <button id="modalClose" class="btn btn__primary">Ok</button>
+                <button id="modalClose" class="btn btn__error">Cancel</button>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;div class=&quot;backdrop hide&quot;&gt;
+            &lt;div id=&quot;alert-modal&quot; class=&quot;dialog dialog__sm&quot;&gt;
+              &lt;header class=&quot;dialog__header&quot;&gt;
+                &lt;h5&gt;Dialog header&lt;/h5&gt;
+                &lt;button id=&quot;modalClose&quot; class=&quot;dialog__close&quot;&gt;
+                  &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+              &lt;/header&gt;
+              &lt;section class=&quot;dialog__body&quot;&gt;
+                &lt;p class=&quot;dialog__text&quot;&gt;Dialog Body text&lt;/p&gt;
+              &lt;/section&gt;
+              &lt;footer class=&quot;dialog__footer&quot;&gt;
+                &lt;button id=&quot;modalClose&quot; class=&quot;btn btn__primary&quot;&gt;Ok&lt;/button&gt;
+                &lt;button id=&quot;modalClose&quot; class=&quot;btn btn__error&quot;&gt;Cancel&lt;/button&gt;
+              &lt;/footer&gt;
+            &lt;/div&gt;</code></pre>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/app.js"></script>
   </body>
 </html>
