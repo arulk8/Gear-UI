@@ -6,6 +6,12 @@
   background-color: var(--secondary);
   color: var(--white);
 }
+.c-primary {
+  color: var(--primary);
+}
+.c-secondary {
+  color: var(--secondary);
+}
 .b-primary {
   border: 1px solid var(--primary);
 }
@@ -13,6 +19,7 @@
 .b-secondary {
   border: 1px solid var(--secondary);
 }
+
 .success {
   background-color: var(--success);
 }
