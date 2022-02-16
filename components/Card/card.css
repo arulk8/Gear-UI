@@ -1,6 +1,5 @@
 .card {
   margin: var(--gap-5);
-  background-color: var(--o-white);
 }
 .card__v {
   width: 15.5rem;

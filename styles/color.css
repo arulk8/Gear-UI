@@ -36,3 +36,6 @@
 .text-highlight {
   color: var(--primary);
 }
+.bg__o--white {
+  background-color: var(--o-white);
+}
