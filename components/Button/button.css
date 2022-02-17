@@ -67,7 +67,7 @@
   font-weight: var(--font-semibold);
   cursor: pointer;
   text-decoration: none;
-  padding: 0.3rem 0.4rem;
+  padding: 0.2rem 0.3rem;
 }
 .btn__link--primary {
   border-bottom: 2px solid var(--primary);
