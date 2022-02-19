@@ -3,11 +3,13 @@
   --secondary: #4b61a1;
   --white: #ffffff;
   --o-white: #f0eeee;
-  --gray: #e9e1e1;
   --aux: #ffc745;
+
   --tint: #f0eeeea3;
   --black: #000000;
   --gray: #8a8383;
+  --o-gray: #e9e1e1;
+
   --transparent: rgba(0, 0, 0, 0.5);
 
   --success: #11ad40;
