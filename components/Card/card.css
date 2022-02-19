@@ -85,3 +85,12 @@
 .card__h .card__footer {
   padding-top: var(--gap-8);
 }
+.card__controls {
+  margin: 0.5rem;
+  gap: 0.8rem;
+}
+.card__controls > button {
+  padding: 0.2rem 0.33rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
