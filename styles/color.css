@@ -6,6 +6,9 @@
   background-color: var(--secondary);
   color: var(--white);
 }
+.bg__secondary {
+  background-color: var(--secondary);
+}
 .c-primary {
   color: var(--primary);
 }
@@ -15,8 +18,10 @@
 .b-primary {
   border: 1px solid var(--primary);
 }
-
-.aux {
+.c-white {
+  color: var(--white);
+}
+.c-aux {
   color: var(--aux);
 }
 .bg__aux {

@@ -10,8 +10,6 @@
   padding: 0.3rem 0.45rem;
   border-radius: 50%;
   position: absolute;
-  background-color: var(--secondary);
-  color: var(--white);
   top: -8px;
   right: -16px;
   font-size: 0.6rem;
@@ -19,7 +17,7 @@
 .badge__status {
   border-radius: 50%;
   position: absolute;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--white);
 }
 .badge__status--xs {
   padding: 0.15rem 0.15rem;
