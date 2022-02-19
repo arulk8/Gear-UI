@@ -87,6 +87,9 @@
 .flex-aic {
   align-items: center;
 }
+.flex-aist {
+  align-items: flex-start;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
