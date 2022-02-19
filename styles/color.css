@@ -16,6 +16,15 @@
   border: 1px solid var(--primary);
 }
 
+.aux {
+  color: var(--aux);
+}
+.bg__aux {
+  background-color: var(--aux);
+}
+.b__aux {
+  border: 1px solid var(--aux);
+}
 .b-secondary {
   border: 1px solid var(--secondary);
 }
