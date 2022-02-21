@@ -13,11 +13,11 @@
 }
 .grid-1-column {
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: 5rem 1fr auto;
   min-height: 100vh;
   grid-template-areas:
     "header"
-    "main"
+    "textmain"
     "footer";
 }
 .main-header {
@@ -26,7 +26,9 @@
 .content {
   grid-area: main;
 }
-
+.text-content {
+  grid-area: textmain;
+}
 .left-aside {
   grid-area: laside;
 }
