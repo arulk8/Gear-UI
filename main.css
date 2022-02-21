@@ -24,6 +24,9 @@ body {
   z-index: var(--z-index-nav);
   width: 100%;
 }
+.main-nav {
+  padding: 0 2rem;
+}
 .main-nav__link > a {
   color: inherit;
 }
@@ -118,6 +121,14 @@ body {
 .list__container {
   gap: 0.5rem;
 }
+
+.into_container {
+  width: 100%;
+}
+.intro {
+  width: 60%;
+  margin-top: 10%;
+}
 @media (min-width: 40em) {
   html {
     font-size: 100%;
@@ -126,14 +137,14 @@ body {
     display: block;
   }
   .content {
-    margin-left: 12rem;
+    margin-left: 14rem;
     width: 80%;
   }
   .mobile-nav {
     display: none;
   }
   .left-aside {
-    width: 12rem;
+    width: 14rem;
     display: block;
   }
   .code-highlight {

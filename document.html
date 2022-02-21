@@ -12,15 +12,17 @@
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../../main.css" />
-    <link rel="stylesheet" href="./avatar.css" />
+
+    <link rel="stylesheet" href="./vendor/prism.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./vendor/prism.js"></script>
   </head>
   <body class="container">
     <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
       <div class="logo-container flex-row flex-aic mx-5">
         <div class="logo mx-5"></div>
         <h2 class="logo__name font-bold">
-          <a class="no-underline" href="">Gear</a>
+          <a class="no-underline" href="./index.html">Gear</a>
         </h2>
       </div>
 
@@ -28,13 +30,12 @@
         <nav class="main-nav">
           <ul class="main-nav__links flex-row flex-aic list-style-none">
             <li class="main-nav__link px-5 font-medium">
-              <a class="no-underline" href="./index.html">Get started </a>
+              <a class="no-underline" href="./document.html"> Documentation </a>
             </li>
             <li class="main-nav__link px-5 font-medium">
-              <a class="no-underline" href="../../document.html"> Docs </a>
-            </li>
-            <li class="main-nav__link px-5 font-medium">
-              <a class="no-underline" href="#"> Code </a>
+              <a class="no-underline" href="https://github.com/arulk8/Gear-UI">
+                Code
+              </a>
             </li>
           </ul>
         </nav>
@@ -43,8 +44,20 @@
 
     <aside class="left-aside box-shadow">
       <div class="m-8">
-        <h2 class="font-semibold my-5 text-center">Components</h2>
         <nav class="side-nav">
+          <h2 class="font-semibold my-8 text-center">Documentation</h2>
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./document.html"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+          <h2 class="font-semibold my-5 text-center">Components</h2>
           <ul
             class="side-nav__items list-style-none flex-column flex-jc flex-aic"
           >
@@ -122,19 +135,27 @@
         </nav>
       </div>
     </aside>
-    <aside class="right-aside box-shadow">
-      <ol class="list-style-circle">
-        <li class="right-nav__item py-3">
-          <a class="no-underline" href="#normal">Normal Avatar</a>
-        </li>
-        <li class="right-nav__item py-3">
-          <a class="no-underline" href="#standard">Standard Avatar</a>
-        </li>
-        <li class="right-nav__item py-3">
-          <a class="no-underline" href="#text">Text Avatar</a>
-        </li>
-      </ol>
-    </aside>
-    <main class="content"></main>
+
+    <main class="content">
+      <section class="vgutter-md">
+        <h1 class="font-bold">Getting Started</h1>
+        <p class="font-normal py-8">
+          To get started with Gear ui we need to link it's css inside head of
+          your html file.
+        </p>
+      </section>
+      <section class="vgutter-md">
+        <h1 class="font-medium">Importing in HTML:</h1>
+        <div class="code-highlight vgutter-lg">
+          <pre><code class="language-html">           &lt;link rel=&quot;stylesheet&quot; href=&quot;https://gearui.netlify.app/library.css&quot; /&gt;</code></pre>
+        </div>
+      </section>
+      <section class="vgutter-md">
+        <h1 class="font-medium">Importing in CSS:</h1>
+        <div class="code-highlight">
+          <pre><code class="language-css">          @import url("https://gearui.netlify.app/library.css");</code></pre>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
