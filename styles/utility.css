@@ -107,7 +107,9 @@
 .flex-jc-sa {
   justify-content: space-around;
 }
-
+.flex-jc-sa {
+  justify-content: space-evenly;
+}
 .font-light {
   font-weight: var(--font-light);
   font-size: var(--text-xs);
