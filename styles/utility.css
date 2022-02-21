@@ -49,10 +49,12 @@
 }
 
 .py-8 {
-  padding: var(--gap-8) 0;
+  padding-top: var(--gap-8);
+  padding-bottom: var(--gap-8);
 }
 .py-5 {
-  padding: var(--gap-5) 0;
+  padding-top: var(--gap-5);
+  padding-bottom: var(--gap-5);
 }
 .py-4 {
   padding: var(--gap-4) 0;
@@ -92,6 +94,9 @@
 }
 .flex-wrap {
   flex-wrap: wrap;
+}
+.flex-jcfs {
+  justify-content: flex-start;
 }
 .flex-jc {
   justify-content: center;
