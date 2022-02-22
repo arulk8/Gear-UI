@@ -2,6 +2,8 @@
 
 Gear UI is a free, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces
 
+[Live Demo](https://gearui.netlify.app)
+
 ## Technologies used
 
 HTML, CSS, JavaScript
