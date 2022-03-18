@@ -28,7 +28,6 @@ body {
   padding: 0 2rem;
 }
 .main-nav__link > a {
-  color: inherit;
 }
 
 .logo {
@@ -37,7 +36,6 @@ body {
   height: 3rem;
 }
 .logo__name > a {
-  color: inherit;
 }
 .logo__name:hover,
 .main-nav__link:hover {

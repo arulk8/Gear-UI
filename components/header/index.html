@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gear UI | Modal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../vendor/prism.css" />
+    <link rel="stylesheet" href="../../main.css" />
+    <script src="../../vendor/prism.js"></script>
+  </head>
+  <body class="container">
+    <header class="main-header primary b-primary flex-row flex-aic px-5 py-8">
+      <div class="logo-container flex-row flex-aic mx-5">
+        <div class="logo mx-5"></div>
+        <h2 class="logo__name font-bold">
+          <a class="no-underline c-white" href="../../index.html">Gear</a>
+        </h2>
+      </div>
+
+      <div class="nav-continer margin-auto--l">
+        <nav class="main-nav">
+          <ul class="main-nav__links flex-row flex-aic list-style-none">
+            <li class="main-nav__link px-5 font-medium">
+              <a class="no-underline c-white" href="../../document.html">
+                Documentation
+              </a>
+            </li>
+            <li class="main-nav__link px-5 font-medium">
+              <a
+                class="no-underline c-white"
+                href="https://github.com/arulk8/Gear-UI"
+              >
+                Code
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav margin-auto--l p-8">
+        <div id="barIcon" class="mobile-icon font-bold fas fa-bars"></div>
+        <div id="closeIcon" class="mobile-icon font-bold fas fa-times"></div>
+      </div>
+    </header>
+
+    <aside class="left-aside box-shadow">
+      <div class="m-8">
+        <nav class="side-nav">
+          <h2 class="font-semibold my-8 text-center">Documentation</h2>
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../../document.html"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+          <h2 class="font-semibold my-5 text-center">Components</h2>
+          <ul
+            class="side-nav__items list-style-none flex-column flex-jc flex-aic"
+          >
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Avatar/index.html"
+                >Avatar</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Alert/index.html"
+                >Alert</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Badge/index.html"
+                >Badges</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Button/index.html"
+                >Button</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Card/index.html"
+                >Cards</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Images/index.html"
+                >Images</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Input/index.html"
+                >Input</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../Text-utility/index.html"
+                >Text Utility</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block"
+                href="../list/index.html"
+                >List</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-bloc"
+                href="../Modal/index.html"
+                >Modal</a
+              >
+            </li>
+            <li class="side-nav__item font-medium my-3">
+              <a
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
+                >Navigation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="vgutter-md">
+        <h2 class="font-bold">Navigation</h2>
+        <p class="font-normal py-8"></p>
+      </section>
+
+      <section id="center-text" class="vgutter-md">
+        <p class="font-normal py-8">
+          Navigations are crucial part of an web page. They help user to
+          navigate to different pages
+        </p>
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <header class="main-header__example flex-row flex-aic py-8">
+            <div
+              class="header__left--container flex-row flex-aic margin-auto--r"
+            >
+              <h2 class="logo__name font-bold">
+                <a class="no-underline c-aux" href="./index.html">Home</a>
+              </h2>
+            </div>
+
+            <div class="header__center--container">
+              <form action="">
+                <div class="search__container">
+                  <span class="header__search--icon fas fa-search"></span>
+                  <input
+                    class="header__search--bar"
+                    placeholder="Search"
+                    type="text"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="header__right--container margin-auto--l">
+              <nav class="main-nav">
+                <ul class="main-nav__links flex-row flex-aic list-style-none">
+                  <li class="main-nav__link px-5 font-medium">
+                    <a class="no-underline c-aux" href="./auth/index.html"
+                      >Login
+                    </a>
+                  </li>
+                  <li class="main-nav__link px-5 font-medium">
+                    <a class="no-underline c-aux" href="./whishlist/index.html">
+                      <div class="badge">
+                        <i class="fas fa-heart"></i>
+                        <span class="badge__count">3</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="main-nav__link px-5 font-medium">
+                    <a class="no-underline c-aux" href="./cart/index.html">
+                      <div class="badge">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge__count">3</span>
+                      </div>
+                      Cart
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        </div>
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <header class="main-header__example flex-row flex-aic py-8">
+            <div
+              class="header__left--container flex-row flex-aic margin-auto--r"
+            >
+              <h2 class="logo__name font-bold">
+                <a class="no-underline c-aux" href="./index.html">Home</a>
+              </h2>
+            </div>
+
+            <div class="header__right--container margin-auto--l">
+              <nav class="main-nav">
+                <ul class="main-nav__links flex-row flex-aic list-style-none">
+                  <li class="main-nav__link px-5 font-medium">
+                    <a class="no-underline c-aux" href="./auth/index.html"
+                      >Login
+                    </a>
+                  </li>
+                  <li class="main-nav__link px-5 font-medium">
+                    <a class="no-underline c-aux" href="./whishlist/index.html">
+                      <div class="badge">
+                        <i class="fas fa-heart"></i>
+                        <span class="badge__count">3</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="main-nav__link px-5 font-medium">
+                    <a class="no-underline c-aux" href="./cart/index.html">
+                      <div class="badge">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge__count">3</span>
+                      </div>
+                      Cart
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        </div>
+        <div class="code-highlight">
+          <pre><code class="language-html">         &lt;header class=&quot;main-header flex-row flex-aic py-8&quot;&gt;
+            &lt;div
+              class=&quot;header__left--container flex-row flex-aic margin-auto--r&quot;
+            &gt;
+              &lt;h2 class=&quot;logo__name font-bold&quot;&gt;
+                &lt;a class=&quot;no-underline c-aux&quot; href=&quot;./index.html&quot;&gt;Home&lt;/a&gt;
+              &lt;/h2&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;header__center--container&quot;&gt;
+              &lt;form action=&quot;&quot;&gt;
+                &lt;div class=&quot;search__container&quot;&gt;
+                  &lt;span class=&quot;header__search--icon fas fa-search&quot;&gt;&lt;/span&gt;
+                  &lt;input
+                    class=&quot;header__search--bar&quot;
+                    placeholder=&quot;Search&quot;
+                    type=&quot;text&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;header__right--container margin-auto--l&quot;&gt;
+              &lt;nav class=&quot;main-nav&quot;&gt;
+                &lt;ul class=&quot;main-nav__links flex-row flex-aic list-style-none&quot;&gt;
+                  &lt;li class=&quot;main-nav__link px-5 font-medium&quot;&gt;
+                    &lt;a class=&quot;no-underline c-aux&quot; href=&quot;./auth/index.html&quot;
+                      &gt;Login
+                    &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;main-nav__link px-5 font-medium&quot;&gt;
+                    &lt;a class=&quot;no-underline c-aux&quot; href=&quot;./whishlist/index.html&quot;&gt;
+                      &lt;div class=&quot;badge&quot;&gt;
+                        &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+                        &lt;span class=&quot;badge__count&quot;&gt;3&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;main-nav__link px-5 font-medium&quot;&gt;
+                    &lt;a class=&quot;no-underline c-aux&quot; href=&quot;./cart/index.html&quot;&gt;
+                      &lt;div class=&quot;badge&quot;&gt;
+                        &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+                        &lt;span class=&quot;badge__count&quot;&gt;3&lt;/span&gt;
+                      &lt;/div&gt;
+                      Cart
+                    &lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            &lt;/div&gt;
+          &lt;/header&gt;</code></pre>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/app.js"></script>
+  </body>
+</html>
