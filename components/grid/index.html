@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gear UI | List</title>
+    <title>Gear UI | Rating</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -127,8 +127,8 @@
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
-                class="side-nav__link no-underline inline-block side-nav__item--active"
-                href="./index.html"
+                class="side-nav__link no-underline inline-block"
+                href="../list/index.html"
                 >List</a
               >
             </li>
@@ -146,6 +146,7 @@
                 >Navigation</a
               >
             </li>
+
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
@@ -155,136 +156,110 @@
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
-                class="side-nav__link no-underline inline-block"
-                href="../grid/index.html"
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
                 >Grid</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
-                class="side-nav__link no-underline inline-block"
-                href="../toast/index.html"
-                >Toast</a
-              >
+              class="side-nav__link no-underline inline-block"
+              href="../toast/index.html"
+              >Toast</a>
             </li>
           </ul>
         </nav>
       </div>
     </aside>
-    <aside class="right-aside box-shadow">
-      <ol class="list-style-circle">
-        <li class="right-nav__item py-3">
-          <a class="no-underline left-nav__item font-medium" href="#normal"
-            >Normal List</a
-          >
-        </li>
-        <li class="right-nav__item py-3">
-          <a class="no-underline left-nav__item font-medium" href="#stacked"
-            >Stacked list</a
-          >
-        </li>
-      </ol>
-    </aside>
+
     <main class="content">
       <section class="vgutter-md">
-        <h2 class="font-bold">List</h2>
+        <h2 class="font-bold">Grid</h2>
         <p class="font-normal py-8">
-          Lists allow web developers to group a set of related items.
+          Grid are more modren way for creating layout for an website
         </p>
       </section>
 
-      <section id="normal" class="vgutter-md">
-        <h2 class="font-bold">Normal list</h2>
-        <p class="font-normal py-8"></p>
-        <div
-          class="list__container flex-column flex-aic flex-jc flex-wrap py-5"
-        >
-          <ul class="list list-style-circle">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ul>
-
-          <ul class="list list-style-disc">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ul>
-
-          <ol class="list list-style-number">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ol>
-
-          <ol class="list list-style-alpha-upper">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ol>
-          <ol class="list list-style-lower-upper">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ol>
+      <section id="center-text" class="vgutter-md">
+        <h2 class="font-bold">Two column grid</h2>
+        <p class="font-normal py-8">
+          This simple grid consists of two columns and is responsive.Use the class grid__col-2.
+        </p>
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <div class="grid__col-2">
+            <div class="sample">Col 1</div>
+            <div class="sample">Col 2</div>
+          </div>
         </div>
 
         <div class="code-highlight">
-          <pre><code class="language-html">          &lt;ul class=&quot;list list-style-circle&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ul&gt;
-
-          &lt;ul class=&quot;list list-style-disc&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ul&gt;
-
-          &lt;ol class=&quot;list list-style-number&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ol&gt;
-
-          &lt;ol class=&quot;list list-style-alpha-upper&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ol&gt;
-          &lt;ol class=&quot;list list-style-lower-upper&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ol&gt;</code></pre>
-        </div>
+          <pre><code class="language-html">          &lt;div class=&quot;grid__col-2&quot;&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col 1&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col 2&lt;/div&gt;</code></pre>
       </section>
-
-      <section id="stacked" class="vgutter-md">
-        <h2 class="font-bold">Stacked list</h2>
-        <p class="font-normal py-8"></p>
-        <div
-          class="list__container flex-column flex-aic flex-jc flex-wrap py-5"
-        >
-          <ul class="list stacked__list">
-            <li class="list__item">List item 5</li>
-            <li class="list__item">List item 4</li>
-            <li class="list__item">List item 3</li>
-            <li class="list__item">List item 2</li>
-            <li class="list__item">List item 1</li>
-          </ul>
+      <section id="center-text" class="vgutter-md">
+        <h2 class="font-bold">Five column grid</h2>
+        <p class="font-normal py-8">
+          This simple grid consists of five columns and is responsive.Use the class grid__col-5.
+        </p>
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <div class="grid__col-5">
+            <div class="sample">Col 1</div>
+            <div class="sample">Col 2</div>
+            <div class="sample">Col 3</div>
+            <div class="sample">Col 4</div>
+            <div class="sample">Col 5</div>
+          </div>
         </div>
 
         <div class="code-highlight">
-          <pre><code class="language-html">          &lt;ul class=&quot;list stacked__list&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 3&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 4&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 5&lt;/li&gt;
-          &lt;/ul&gt;</code></pre>
+          <pre><code class="language-html">          &lt;div class=&quot;grid__col-5&quot;&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col 1&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col 2&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col 3&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col 4&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col 5&lt;/div&gt;
+          &lt;/div&gt;
+          </code></pre>
+      </section>
+      <section id="center-text" class="vgutter-md">
+        <h2 class="font-bold">Twelve column grid</h2>
+        <p class="font-normal py-8">
+          This simple grid consists of twelve columns and is responsive. Use the class grid__col-12.
+        </p>
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
+          <div class="grid__col-12">
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+            <div class="sample">Col</div>
+          </div>
         </div>
+
+        <div class="code-highlight">
+          <pre><code class="language-html">          &lt;div class=&quot;grid__col-12&quot;&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+            &lt;div class=&quot;sample&quot;&gt;Col&lt;/div&gt;
+          &lt;/div&gt;</code></pre>
+
       </section>
     </main>
     <script src="../../scripts/app.js"></script>

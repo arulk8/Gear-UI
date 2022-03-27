@@ -14,3 +14,6 @@
 @import url("./components/list/list.css");
 @import url("./components/Modal/modal.css");
 @import url("./components/header/header.css");
+@import url("./components/rating/rating.css");
+@import url("./components/grid/grid.css");
+@import url("./components/toast/toast.css");
