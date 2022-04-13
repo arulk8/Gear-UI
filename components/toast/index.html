@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gear UI | List</title>
+    <title>Gear UI | Rating</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -127,8 +127,8 @@
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
-                class="side-nav__link no-underline inline-block side-nav__item--active"
-                href="./index.html"
+                class="side-nav__link no-underline inline-block"
+                href="../list/index.html"
                 >List</a
               >
             </li>
@@ -146,6 +146,7 @@
                 >Navigation</a
               >
             </li>
+
             <li class="side-nav__item font-medium my-3">
               <a
                 class="side-nav__link no-underline inline-block"
@@ -155,15 +156,15 @@
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
-                class="side-nav__link no-underline inline-block"
+                class="side-nav__link no-underline inline-block "
                 href="../grid/index.html"
                 >Grid</a
               >
             </li>
             <li class="side-nav__item font-medium my-3">
               <a
-                class="side-nav__link no-underline inline-block"
-                href="../toast/index.html"
+                class="side-nav__link no-underline inline-block side-nav__item--active"
+                href="./index.html"
                 >Toast</a
               >
             </li>
@@ -171,121 +172,41 @@
         </nav>
       </div>
     </aside>
-    <aside class="right-aside box-shadow">
-      <ol class="list-style-circle">
-        <li class="right-nav__item py-3">
-          <a class="no-underline left-nav__item font-medium" href="#normal"
-            >Normal List</a
-          >
-        </li>
-        <li class="right-nav__item py-3">
-          <a class="no-underline left-nav__item font-medium" href="#stacked"
-            >Stacked list</a
-          >
-        </li>
-      </ol>
-    </aside>
+
     <main class="content">
       <section class="vgutter-md">
-        <h2 class="font-bold">List</h2>
+        <h2 class="font-bold">Toast</h2>
         <p class="font-normal py-8">
-          Lists allow web developers to group a set of related items.
+          Toasts are basically disappearing notification messages that appear on the screen to inform the user about something.
         </p>
       </section>
 
-      <section id="normal" class="vgutter-md">
-        <h2 class="font-bold">Normal list</h2>
-        <p class="font-normal py-8"></p>
-        <div
-          class="list__container flex-column flex-aic flex-jc flex-wrap py-5"
-        >
-          <ul class="list list-style-circle">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ul>
+      <section id="center-text" class="vgutter-md">
+        <h2 class="font-bold">Basic toast</h2>
+        <p class="font-normal py-8">
+          Add .toast__top or.toast__bottom to show toast on top or bottom of the page
+        </p>
+        <div class="flex-column flex-aic flex-jc flex-wrap py-5">
 
-          <ul class="list list-style-disc">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ul>
+          <button id="toastShow" class="btn btn__primary">Show Notification</button>
 
-          <ol class="list list-style-number">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ol>
-
-          <ol class="list list-style-alpha-upper">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ol>
-          <ol class="list list-style-lower-upper">
-            <li class="list__item">item 1</li>
-            <li class="list__item">item 2</li>
-            <li class="list__item">item 3</li>
-          </ol>
+          <div class="toast toast__bottom hide" id="toast">
+            <span>Error occured.</span>
+            <button id="toastClose" class="font-medium toast__close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </div>
 
         <div class="code-highlight">
-          <pre><code class="language-html">          &lt;ul class=&quot;list list-style-circle&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ul&gt;
-
-          &lt;ul class=&quot;list list-style-disc&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ul&gt;
-
-          &lt;ol class=&quot;list list-style-number&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ol&gt;
-
-          &lt;ol class=&quot;list list-style-alpha-upper&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ol&gt;
-          &lt;ol class=&quot;list list-style-lower-upper&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;item 3&lt;/li&gt;
-          &lt;/ol&gt;</code></pre>
-        </div>
+          <pre><code class="language-html">          &lt;div class="toast toast__bottom hide" id="toast"&gt;
+            &lt;span&gt;Error occured.&lt;/span&gt;
+            &lt;button id="toastClose" class="font-medium toast__close"&gt;
+              &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;</code></pre>
       </section>
 
-      <section id="stacked" class="vgutter-md">
-        <h2 class="font-bold">Stacked list</h2>
-        <p class="font-normal py-8"></p>
-        <div
-          class="list__container flex-column flex-aic flex-jc flex-wrap py-5"
-        >
-          <ul class="list stacked__list">
-            <li class="list__item">List item 5</li>
-            <li class="list__item">List item 4</li>
-            <li class="list__item">List item 3</li>
-            <li class="list__item">List item 2</li>
-            <li class="list__item">List item 1</li>
-          </ul>
-        </div>
-
-        <div class="code-highlight">
-          <pre><code class="language-html">          &lt;ul class=&quot;list stacked__list&quot;&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 1&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 2&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 3&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 4&lt;/li&gt;
-            &lt;li class=&quot;list__item&quot;&gt;List item 5&lt;/li&gt;
-          &lt;/ul&gt;</code></pre>
-        </div>
-      </section>
     </main>
     <script src="../../scripts/app.js"></script>
   </body>

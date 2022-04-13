@@ -27,18 +27,13 @@ body {
 .main-nav {
   padding: 0 2rem;
 }
-.main-nav__link > a {
-  color: inherit;
-}
 
 .logo {
   background: url("./assets/image/logo.svg");
   width: 3rem;
   height: 3rem;
 }
-.logo__name > a {
-  color: inherit;
-}
+
 .logo__name:hover,
 .main-nav__link:hover {
   color: var(--o-white);
@@ -128,6 +123,11 @@ body {
 .intro {
   width: 60%;
   margin-top: 10%;
+}
+.sample {
+  padding: 1rem;
+  border: 1px solid var(--primary);
+  text-align: center;
 }
 @media (min-width: 40em) {
   html {

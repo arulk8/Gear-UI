@@ -4,14 +4,20 @@ const closeBtn = document.querySelector("#closeIcon");
 const modalClose = document.querySelectorAll("#modalClose");
 const modalShow = document.querySelector("#modalShow");
 const backdrop = document.querySelector(".backdrop");
-modalClose.forEach((node) => {
-  node.addEventListener("click", (e) => {
-    backdrop.classList.add("hide");
+
+const toastOpen = document.querySelector("#toastShow");
+const toastClose = document.querySelector("#toastClose");
+const toast = document.querySelector("#toast");
+modalClose &&
+  modalClose.forEach((node) => {
+    node.addEventListener("click", (e) => {
+      backdrop.classList.add("hide");
+    });
   });
-});
-modalShow.addEventListener("click", (e) => {
-  backdrop.classList.remove("hide");
-});
+modalShow &&
+  modalShow.addEventListener("click", (e) => {
+    backdrop.classList.remove("hide");
+  });
 
 const leftNav = document.querySelector(".left-aside");
 
@@ -26,3 +32,16 @@ closeBtn.addEventListener("click", (e) => {
   bar.style.display = "block";
   closeBtn.style.display = "none";
 });
+
+toastOpen &&
+  toastOpen.addEventListener("click", (e) => {
+    toast.classList.remove("hide");
+    setTimeout(() => {
+      toast.classList.add("hide");
+    }, 2000);
+  });
+
+toastClose &&
+  toastClose.addEventListener("click", (e) => {
+    toast.classList.add("hide");
+  });
