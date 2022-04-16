@@ -8,6 +8,9 @@
 .no-underline {
   text-decoration: none;
 }
+.line-through {
+  text-decoration: line-through;
+}
 .margin-auto {
   margin: auto;
 }

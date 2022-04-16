@@ -41,15 +41,11 @@
   color: var(--danger);
 }
 .card__content {
-  padding: var(--gap-6) 0;
+  padding: var(--gap-6) var(--gap-6);
 }
 
 .card__content h2 {
   padding-bottom: var(--gap-4);
-  text-align: center;
-}
-.card__content h3 {
-  text-align: center;
 }
 .card__button {
   width: 100%;
@@ -93,4 +89,18 @@
   padding: 0.2rem 0.33rem;
   font-size: 0.8rem;
   cursor: pointer;
+}
+
+.rating--good {
+  color: var(--success);
+}
+
+.rating--fair {
+  color: var(--warning);
+}
+.rating--bad {
+  color: var(--danger);
+}
+.card__info {
+  gap: 0.5rem;
 }
