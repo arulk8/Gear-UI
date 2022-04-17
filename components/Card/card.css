@@ -3,6 +3,9 @@
 }
 .card__v {
   width: 15.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .card__v .card__header {
   width: 100%;
