@@ -79,6 +79,7 @@
 }
 .card__h .card__body {
   margin: auto;
+  width: 48%;
   padding: var(--gap-6);
 }
 .card__h .card__footer {
